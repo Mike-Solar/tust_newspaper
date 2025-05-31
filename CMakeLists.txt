@@ -14,7 +14,15 @@ find_package(Qt6 COMPONENTS
         Widgets
         REQUIRED)
 
-add_executable(tust_newspaper main.cpp)
+add_executable(tust_newspaper main.cpp
+        mainwindow.cpp
+        mainwindow.h
+        MainWindow.ui
+        HeadDialog.cpp
+        HeadDialog.h
+        HeadDialog.ui
+        Article.cpp
+        Article.h)
 target_link_libraries(tust_newspaper
         Qt::Core
         Qt::Gui
